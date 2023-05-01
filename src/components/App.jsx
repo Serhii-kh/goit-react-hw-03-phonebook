@@ -27,10 +27,8 @@ export class App extends Component {
 		if (
 			contacts.find(
 				contact => contact.name.toLowerCase() === name.toLowerCase()
-			)
-		) {
-			alert(`${name} is already in contacts!`);
-		} else {
+			)) { alert(`${name} is already in contacts!`) }
+		else {
 			this.setState(prevState => ({
 				contacts: [...prevState.contacts, contact],
 			}));
